@@ -1,0 +1,12 @@
+#container {
+  display: flex;
+  height: 600px;
+}
+
+#pendulum {
+  flex: 0 0 25%;
+}
+
+#phasespace {
+  flex: 1;
+}
