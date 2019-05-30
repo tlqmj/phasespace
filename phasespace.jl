@@ -25,7 +25,3 @@ end
 scene = instantiate_plot(θ, p_θ, E, γ);
 update_cam!(scene.children[1], FRect3D(Vec3f0(0), Vec3f0(1)))
 @async sim!(θ, p_θ, scene=scene)
-
-on(scene.events.window_area) do val
-    update_cam!(scene.children[1], FRect3D(Vec3f0(0), Vec3f0(1)))
-end
